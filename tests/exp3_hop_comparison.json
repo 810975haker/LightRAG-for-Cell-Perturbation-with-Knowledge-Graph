@@ -1,0 +1,132 @@
+{
+  "experiment": "2-hop vs 1-hop 推理对比",
+  "timestamp": "2026-05-12T05:09:11.237031+00:00",
+  "results": {
+    "perturbation_node_count": 70,
+    "total_perturbation_edges": 6153,
+    "edge_type_breakdown": {
+      "direct_1hop_edges": 5509,
+      "shared_pathway_2hop_edges": 504,
+      "other_edges": 140
+    },
+    "hop2_edge_ratio": 0.0838,
+    "semantic_relation_distribution": {
+      "affects_associated_with": 3934,
+      "affects_participates": 1575,
+      "affects_shared_pathway_2hop": 504,
+      "has_perturbation_method": 70,
+      "targets_gene": 70
+    },
+    "per_node_edge_stats": {
+      "affects_associated_with": {
+        "avg_neighbors": 56.2,
+        "min": 7,
+        "max": 102
+      },
+      "affects_participates": {
+        "avg_neighbors": 37.5,
+        "min": 3,
+        "max": 78
+      },
+      "affects_shared_pathway_2hop": {
+        "avg_neighbors": 8.0,
+        "min": 8,
+        "max": 8
+      },
+      "has_perturbation_method": {
+        "avg_neighbors": 1.0,
+        "min": 1,
+        "max": 1
+      },
+      "targets_gene": {
+        "avg_neighbors": 1.0,
+        "min": 1,
+        "max": 1
+      }
+    },
+    "target_type_by_edge_type": [
+      {
+        "relation": "affects_associated_with",
+        "target_type": "gene",
+        "count": 3864
+      },
+      {
+        "relation": "affects_associated_with",
+        "target_type": "protein",
+        "count": 70
+      },
+      {
+        "relation": "affects_participates",
+        "target_type": "pathway",
+        "count": 1575
+      },
+      {
+        "relation": "affects_shared_pathway_2hop",
+        "target_type": "gene",
+        "count": 504
+      },
+      {
+        "relation": "has_perturbation_method",
+        "target_type": "pathway",
+        "count": 70
+      },
+      {
+        "relation": "targets_gene",
+        "target_type": "gene",
+        "count": 70
+      }
+    ],
+    "per_seed_gene_summary": {
+      "ALK": {
+        "direct": 462,
+        "hop2": 56,
+        "total": 532
+      },
+      "BRAF": {
+        "direct": 595,
+        "hop2": 56,
+        "total": 665
+      },
+      "EGFR": {
+        "direct": 714,
+        "hop2": 56,
+        "total": 784
+      },
+      "ERBB2": {
+        "direct": 700,
+        "hop2": 56,
+        "total": 770
+      },
+      "KRAS": {
+        "direct": 812,
+        "hop2": 56,
+        "total": 882
+      },
+      "MET": {
+        "direct": 420,
+        "hop2": 56,
+        "total": 490
+      },
+      "PIK3CA": {
+        "direct": 805,
+        "hop2": 56,
+        "total": 875
+      },
+      "RET": {
+        "direct": 245,
+        "hop2": 56,
+        "total": 315
+      },
+      "ROS1": {
+        "direct": 49,
+        "hop2": 0,
+        "total": 63
+      },
+      "TP53": {
+        "direct": 707,
+        "hop2": 56,
+        "total": 777
+      }
+    }
+  }
+}

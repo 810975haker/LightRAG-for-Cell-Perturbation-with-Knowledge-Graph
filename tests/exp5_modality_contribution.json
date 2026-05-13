@@ -1,0 +1,200 @@
+{
+  "experiment": "多组学模态贡献度分析",
+  "timestamp": "2026-05-12T05:24:26.757247+00:00",
+  "results": {
+    "baseline_total_edges": 9309724,
+    "modality_stats": {
+      "mRNA表达": {
+        "edge_count": 991330,
+        "edge_ratio": 0.1065,
+        "unique_targets": 24098,
+        "relation_types": [
+          "EXPRESSES"
+        ]
+      },
+      "miRNA表达": {
+        "edge_count": 6831594,
+        "edge_ratio": 0.7338,
+        "unique_targets": 147959,
+        "relation_types": [
+          "REGULATES"
+        ]
+      },
+      "DNA甲基化": {
+        "edge_count": 209600,
+        "edge_ratio": 0.0225,
+        "unique_targets": 2742,
+        "relation_types": [
+          "HAS_METHYLATION"
+        ]
+      },
+      "拷贝数变异(CNV)": {
+        "edge_count": 194518,
+        "edge_ratio": 0.0209,
+        "unique_targets": 21392,
+        "relation_types": [
+          "HAS_CNV"
+        ]
+      },
+      "蛋白质组": {
+        "edge_count": 60669,
+        "edge_ratio": 0.0065,
+        "unique_targets": 177,
+        "relation_types": [
+          "HAS_PROTEIN_ABUNDANCE"
+        ]
+      }
+    },
+    "modality_ablation": {
+      "mRNA表达": {
+        "removed_edges": 991330,
+        "remaining_edges": 8318394,
+        "retention_ratio": 0.8935
+      },
+      "miRNA表达": {
+        "removed_edges": 6831594,
+        "remaining_edges": 2478130,
+        "retention_ratio": 0.2662
+      },
+      "DNA甲基化": {
+        "removed_edges": 209600,
+        "remaining_edges": 9100124,
+        "retention_ratio": 0.9775
+      },
+      "拷贝数变异(CNV)": {
+        "removed_edges": 194518,
+        "remaining_edges": 9115206,
+        "retention_ratio": 0.9791
+      },
+      "蛋白质组": {
+        "removed_edges": 60669,
+        "remaining_edges": 9249055,
+        "retention_ratio": 0.9935
+      }
+    },
+    "relation_type_detail": {
+      "REGULATES": {
+        "edge_count": 6831594,
+        "target_entities": 147959
+      },
+      "EXPRESSES": {
+        "edge_count": 991330,
+        "target_entities": 24098
+      },
+      "ASSOCIATED_WITH": {
+        "edge_count": 826212,
+        "target_entities": 337886
+      },
+      "HAS_METHYLATION": {
+        "edge_count": 209600,
+        "target_entities": 2742
+      },
+      "HAS_CNV": {
+        "edge_count": 194518,
+        "target_entities": 21392
+      },
+      "PARTICIPATES": {
+        "edge_count": 88769,
+        "target_entities": 2866
+      },
+      "ACTIVATES": {
+        "edge_count": 78782,
+        "target_entities": 9006
+      },
+      "HAS_PROTEIN_ABUNDANCE": {
+        "edge_count": 60669,
+        "target_entities": 177
+      },
+      "INHIBITS": {
+        "edge_count": 14465,
+        "target_entities": 5092
+      },
+      "BELONGS_TO": {
+        "edge_count": 3939,
+        "target_entities": 4
+      },
+      "AFFECTS_ASSOCIATED_WITH": {
+        "edge_count": 3934,
+        "target_entities": 460
+      },
+      "HAS_CONDITION": {
+        "edge_count": 3693,
+        "target_entities": 1
+      },
+      "AFFECTS_PARTICIPATES": {
+        "edge_count": 1575,
+        "target_entities": 120
+      },
+      "AFFECTS_SHARED_PATHWAY_2HOP": {
+        "edge_count": 504,
+        "target_entities": 9
+      },
+      "TARGETS_GENE": {
+        "edge_count": 70,
+        "target_entities": 10
+      },
+      "HAS_PERTURBATION_METHOD": {
+        "edge_count": 70,
+        "target_entities": 7
+      }
+    },
+    "source_modal_distribution": {
+      "TCGA": {
+        "REGULATES": 6831594,
+        "EXPRESSES": 714830,
+        "HAS_METHYLATION": 209600,
+        "HAS_CNV": 194518,
+        "HAS_PROTEIN_ABUNDANCE": 60669,
+        "BELONGS_TO": 3140,
+        "HAS_CONDITION": 3140
+      },
+      "GEO": {
+        "EXPRESSES": 276500,
+        "BELONGS_TO": 553,
+        "HAS_CONDITION": 553
+      },
+      "NPInter": {
+        "ASSOCIATED_WITH": 200000
+      },
+      "STRING": {
+        "ASSOCIATED_WITH": 196452
+      },
+      "NCBI Gene": {
+        "ASSOCIATED_WITH": 193789
+      },
+      "BioGRID": {
+        "ASSOCIATED_WITH": 152004
+      },
+      "Reactome": {
+        "PARTICIPATES": 88370,
+        "ASSOCIATED_WITH": 23612
+      },
+      "OmniPath": {
+        "ACTIVATES": 64040,
+        "ASSOCIATED_WITH": 14481,
+        "INHIBITS": 6696
+      },
+      "Ensembl": {
+        "ASSOCIATED_WITH": 42760
+      },
+      "SIGNOR": {
+        "ACTIVATES": 14742,
+        "INHIBITS": 7769,
+        "ASSOCIATED_WITH": 3114
+      },
+      "DerivedPerturbation": {
+        "AFFECTS_ASSOCIATED_WITH": 3934,
+        "AFFECTS_PARTICIPATES": 1575,
+        "AFFECTS_SHARED_PATHWAY_2HOP": 504,
+        "HAS_PERTURBATION_METHOD": 70,
+        "TARGETS_GENE": 70
+      },
+      "KEGG": {
+        "PARTICIPATES": 399
+      },
+      "ENCODE": {
+        "BELONGS_TO": 246
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "timestamp": "2026-05-12T02:33:38.149333+00:00",
+    "node_count": 1048637,
+    "edge_count": 9309724
+  },
+  "structural": {
+    "node_count": 1048637,
+    "edge_count": 9309724,
+    "unique_node_types": 7,
+    "unique_relation_types": 11,
+    "entity_type_distribution": {
+      "gene": 981131,
+      "protein": 33500,
+      "pathway": 23720,
+      "mirna": 7586,
+      "sample": 2695,
+      "Cell": 4,
+      "condition": 1
+    },
+    "relation_type_distribution": {
+      "regulates": 6831594,
+      "expresses": 991330,
+      "associated_with": 832365,
+      "has_methylation": 209600,
+      "has_cnv": 194518,
+      "participates": 88769,
+      "activates": 78782,
+      "has_protein_abundance": 60669,
+      "inhibits": 14465,
+      "belongs_to": 3939,
+      "has_condition": 3693
+    },
+    "in_degree_stats": {
+      "min": 0,
+      "max": 4121,
+      "mean": 8.88,
+      "median": 0,
+      "p99": 150
+    },
+    "out_degree_stats": {
+      "min": 0,
+      "max": 9309,
+      "mean": 8.88,
+      "median": 1,
+      "p99": 60
+    },
+    "total_degree_stats": {
+      "min": 1,
+      "max": 9309,
+      "mean": 17.76,
+      "median": 1,
+      "p99": 261
+    },
+    "density": 8.47e-06
+  },
+  "multi_omics": {
+    "omics_edge_count": 1456117,
+    "omics_modality_distribution": {
+      "expresses": 991330,
+      "has_methylation": 209600,
+      "has_cnv": 194518,
+      "has_protein_abundance": 60669
+    },
+    "sample_count": 2695,
+    "cell_count": 4,
+    "gene_count": 981131,
+    "protein_count": 33500,
+    "mirna_count": 7586,
+    "condition_count": 1,
+    "sample_gene_expression_edges": 1178048,
+    "modality_count": 4,
+    "multi_omics_score": 0.1251
+  },
+  "semantic": {
+    "source_distribution": {
+      "TCGA": 8017491,
+      "GEO": 277606,
+      "NPInter": 200000,
+      "STRING": 196452,
+      "NCBI Gene": 193789,
+      "BioGRID": 152004,
+      "Reactome": 111982,
+      "OmniPath": 85217,
+      "Ensembl": 42760,
+      "SIGNOR": 25625,
+      "DerivedPerturbation": 6153,
+      "KEGG": 399,
+      "ENCODE": 246
+    },
+    "unique_sources": 13,
+    "edges_with_evidence": 9309724,
+    "evidence_coverage_ratio": 1.0,
+    "avg_evidence_length_chars": 158.2,
+    "edges_with_structured": 9309724,
+    "structured_evidence_ratio": 1.0,
+    "effect_sign_distribution": {
+      "neutral": 9215544,
+      "positive": 79442,
+      "negative": 14738
+    },
+    "direction_coverage_ratio": 0.0101,
+    "entity_type_diversity": 7,
+    "relation_type_diversity": 11
+  },
+  "connectivity": {
+    "node_count": 1048637,
+    "edge_count": 9309724,
+    "avg_degree": 17.76,
+    "graph_density": 8.47e-06,
+    "isolated_nodes": 0,
+    "isolated_ratio": 0.0,
+    "note": "生物知识图谱典型特征：超稀疏有向图，平均度=17.76，图密度=8.47e-06，无孤立节点，呈现无标度网络分布趋势"
+  },
+  "perturbation": {
+    "perturbation_node_count": 70,
+    "perturbation_out_edge_count": 6153,
+    "gene_node_count": 981131,
+    "pathway_node_count": 23720,
+    "seed_genes_total": 10,
+    "seed_genes_in_graph": 10,
+    "seed_coverage": 1.0,
+    "gene_to_pathway_ratio": 41.363
+  },
+  "consistency": {
+    "weight_distribution": {
+      "0.0-0.1": 0,
+      "0.1-0.2": 4513,
+      "0.2-0.3": 8102,
+      "0.3-0.4": 8839,
+      "0.4-0.5": 9922,
+      "0.5-0.6": 14977,
+      "0.6-0.7": 242177,
+      "0.7-0.8": 7112387,
+      "0.8-0.9": 260621,
+      "0.9-1.0": 1648186
+    },
+    "confidence_distribution": {
+      "0.0-0.1": 0,
+      "0.1-0.2": 0,
+      "0.2-0.3": 0,
+      "0.3-0.4": 0,
+      "0.4-0.5": 0,
+      "0.5-0.6": 0,
+      "0.6-0.7": 228911,
+      "0.7-0.8": 8469367,
+      "0.8-0.9": 309723,
+      "0.9-1.0": 301723
+    },
+    "weight_range": [
+      0.15,
+      1.0
+    ],
+    "confidence_range": [
+      0.629,
+      0.999
+    ],
+    "edges_missing_relation": 0,
+    "edges_missing_source": 0,
+    "orphan_nodes": 0,
+    "orphan_ratio": 0.0
+  },
+  "quality_score": {
+    "structural_integrity": 25,
+    "multi_omics_integration": 18.0,
+    "semantic_richness": 12.0,
+    "connectivity": 20,
+    "perturbation_coverage": 15,
+    "consistency": 5,
+    "total": 95.0
+  }
+}

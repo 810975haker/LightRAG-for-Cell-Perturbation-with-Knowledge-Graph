@@ -1,0 +1,2163 @@
+{
+  "experiment": "子图查询性能评估",
+  "timestamp": "2026-05-12T03:19:57.244916+00:00",
+  "backend": "neo4j",
+  "parameters": {
+    "node_sizes": [
+      50,
+      100,
+      200,
+      500,
+      1000
+    ],
+    "edge_sizes": [
+      100,
+      300,
+      500,
+      1000,
+      2000
+    ],
+    "queries": [
+      "EGFR|",
+      "EGFR|activates",
+      "TP53|",
+      "|inhibits",
+      "pathway::|"
+    ],
+    "repeat": 5
+  },
+  "summary": {
+    "total_tests": 125,
+    "latency_min_ms": 5.4,
+    "latency_max_ms": 21497.99,
+    "latency_mean_ms": 1995.54,
+    "latency_p99_ms": 21492.58
+  },
+  "results": [
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 100,
+      "latency_avg_ms": 516.67,
+      "latency_min_ms": 467.0,
+      "latency_max_ms": 550.28,
+      "nodes_returned": 50,
+      "edges_returned": 51,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 51
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 50,
+      "max_edges": 100,
+      "latency_avg_ms": 504.97,
+      "latency_min_ms": 463.92,
+      "latency_max_ms": 602.11,
+      "nodes_returned": 50,
+      "edges_returned": 51,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 51
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 100,
+      "latency_avg_ms": 451.12,
+      "latency_min_ms": 438.29,
+      "latency_max_ms": 477.24,
+      "nodes_returned": 50,
+      "edges_returned": 46,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 46
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 50,
+      "max_edges": 100,
+      "latency_avg_ms": 883.94,
+      "latency_min_ms": 826.73,
+      "latency_max_ms": 934.0,
+      "nodes_returned": 50,
+      "edges_returned": 34,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 100,
+        "both_hit_edges": 0,
+        "returned_edges": 34
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 100,
+      "latency_avg_ms": 5.4,
+      "latency_min_ms": 4.26,
+      "latency_max_ms": 7.76,
+      "nodes_returned": 50,
+      "edges_returned": 45,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 45
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 100,
+      "latency_avg_ms": 500.37,
+      "latency_min_ms": 460.54,
+      "latency_max_ms": 519.23,
+      "nodes_returned": 99,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 100,
+      "max_edges": 100,
+      "latency_avg_ms": 490.75,
+      "latency_min_ms": 481.95,
+      "latency_max_ms": 498.99,
+      "nodes_returned": 99,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 100,
+      "latency_avg_ms": 416.9,
+      "latency_min_ms": 325.91,
+      "latency_max_ms": 482.43,
+      "nodes_returned": 100,
+      "edges_returned": 96,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 96
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 100,
+      "max_edges": 100,
+      "latency_avg_ms": 960.1,
+      "latency_min_ms": 903.78,
+      "latency_max_ms": 1017.37,
+      "nodes_returned": 100,
+      "edges_returned": 74,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 100,
+        "both_hit_edges": 0,
+        "returned_edges": 74
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 100,
+      "latency_avg_ms": 6.46,
+      "latency_min_ms": 4.18,
+      "latency_max_ms": 8.58,
+      "nodes_returned": 100,
+      "edges_returned": 91,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 91
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 100,
+      "latency_avg_ms": 484.15,
+      "latency_min_ms": 420.91,
+      "latency_max_ms": 513.41,
+      "nodes_returned": 99,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 200,
+      "max_edges": 100,
+      "latency_avg_ms": 492.25,
+      "latency_min_ms": 460.56,
+      "latency_max_ms": 531.24,
+      "nodes_returned": 99,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 100,
+      "latency_avg_ms": 451.31,
+      "latency_min_ms": 399.52,
+      "latency_max_ms": 473.76,
+      "nodes_returned": 104,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 200,
+      "max_edges": 100,
+      "latency_avg_ms": 882.91,
+      "latency_min_ms": 854.5,
+      "latency_max_ms": 917.3,
+      "nodes_returned": 126,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 100,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 100,
+      "latency_avg_ms": 7.53,
+      "latency_min_ms": 7.29,
+      "latency_max_ms": 7.78,
+      "nodes_returned": 109,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 100,
+      "latency_avg_ms": 471.43,
+      "latency_min_ms": 401.22,
+      "latency_max_ms": 503.17,
+      "nodes_returned": 99,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 500,
+      "max_edges": 100,
+      "latency_avg_ms": 460.16,
+      "latency_min_ms": 444.74,
+      "latency_max_ms": 483.21,
+      "nodes_returned": 99,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 100,
+      "latency_avg_ms": 469.17,
+      "latency_min_ms": 452.41,
+      "latency_max_ms": 481.31,
+      "nodes_returned": 104,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 500,
+      "max_edges": 100,
+      "latency_avg_ms": 888.88,
+      "latency_min_ms": 858.58,
+      "latency_max_ms": 906.97,
+      "nodes_returned": 126,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 100,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 100,
+      "latency_avg_ms": 7.91,
+      "latency_min_ms": 7.05,
+      "latency_max_ms": 10.31,
+      "nodes_returned": 109,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 100,
+      "latency_avg_ms": 493.41,
+      "latency_min_ms": 483.04,
+      "latency_max_ms": 501.66,
+      "nodes_returned": 99,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 1000,
+      "max_edges": 100,
+      "latency_avg_ms": 481.66,
+      "latency_min_ms": 469.69,
+      "latency_max_ms": 497.98,
+      "nodes_returned": 99,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 100,
+      "latency_avg_ms": 465.26,
+      "latency_min_ms": 443.97,
+      "latency_max_ms": 489.86,
+      "nodes_returned": 104,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 1000,
+      "max_edges": 100,
+      "latency_avg_ms": 915.7,
+      "latency_min_ms": 888.47,
+      "latency_max_ms": 937.37,
+      "nodes_returned": 126,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 100,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 100,
+      "latency_avg_ms": 6.47,
+      "latency_min_ms": 4.41,
+      "latency_max_ms": 8.21,
+      "nodes_returned": 109,
+      "edges_returned": 100,
+      "match_stats": {
+        "node_hit_edges": 100,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 100
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 300,
+      "latency_avg_ms": 481.07,
+      "latency_min_ms": 460.0,
+      "latency_max_ms": 509.81,
+      "nodes_returned": 50,
+      "edges_returned": 52,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 52
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 50,
+      "max_edges": 300,
+      "latency_avg_ms": 463.92,
+      "latency_min_ms": 446.8,
+      "latency_max_ms": 495.54,
+      "nodes_returned": 50,
+      "edges_returned": 52,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 52
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 300,
+      "latency_avg_ms": 469.14,
+      "latency_min_ms": 442.57,
+      "latency_max_ms": 489.53,
+      "nodes_returned": 50,
+      "edges_returned": 47,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 47
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 50,
+      "max_edges": 300,
+      "latency_avg_ms": 984.06,
+      "latency_min_ms": 976.15,
+      "latency_max_ms": 995.25,
+      "nodes_returned": 50,
+      "edges_returned": 34,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 300,
+        "both_hit_edges": 0,
+        "returned_edges": 34
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 300,
+      "latency_avg_ms": 13.24,
+      "latency_min_ms": 11.01,
+      "latency_max_ms": 17.71,
+      "nodes_returned": 50,
+      "edges_returned": 45,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 45
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 300,
+      "latency_avg_ms": 491.0,
+      "latency_min_ms": 461.0,
+      "latency_max_ms": 523.79,
+      "nodes_returned": 100,
+      "edges_returned": 102,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 102
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 100,
+      "max_edges": 300,
+      "latency_avg_ms": 464.71,
+      "latency_min_ms": 434.96,
+      "latency_max_ms": 504.97,
+      "nodes_returned": 100,
+      "edges_returned": 102,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 102
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 300,
+      "latency_avg_ms": 473.44,
+      "latency_min_ms": 431.41,
+      "latency_max_ms": 510.31,
+      "nodes_returned": 100,
+      "edges_returned": 98,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 98
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 100,
+      "max_edges": 300,
+      "latency_avg_ms": 969.45,
+      "latency_min_ms": 942.35,
+      "latency_max_ms": 980.39,
+      "nodes_returned": 100,
+      "edges_returned": 74,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 300,
+        "both_hit_edges": 0,
+        "returned_edges": 74
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 300,
+      "latency_avg_ms": 17.29,
+      "latency_min_ms": 15.14,
+      "latency_max_ms": 18.71,
+      "nodes_returned": 100,
+      "edges_returned": 91,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 91
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 300,
+      "latency_avg_ms": 510.77,
+      "latency_min_ms": 479.2,
+      "latency_max_ms": 527.31,
+      "nodes_returned": 200,
+      "edges_returned": 202,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 202
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 200,
+      "max_edges": 300,
+      "latency_avg_ms": 483.63,
+      "latency_min_ms": 425.57,
+      "latency_max_ms": 570.74,
+      "nodes_returned": 200,
+      "edges_returned": 202,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 202
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 300,
+      "latency_avg_ms": 485.75,
+      "latency_min_ms": 466.7,
+      "latency_max_ms": 503.43,
+      "nodes_returned": 200,
+      "edges_returned": 199,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 199
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 200,
+      "max_edges": 300,
+      "latency_avg_ms": 964.23,
+      "latency_min_ms": 920.56,
+      "latency_max_ms": 994.0,
+      "nodes_returned": 200,
+      "edges_returned": 179,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 300,
+        "both_hit_edges": 0,
+        "returned_edges": 179
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 300,
+      "latency_avg_ms": 15.58,
+      "latency_min_ms": 11.65,
+      "latency_max_ms": 18.83,
+      "nodes_returned": 200,
+      "edges_returned": 185,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 185
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 300,
+      "latency_avg_ms": 496.27,
+      "latency_min_ms": 472.8,
+      "latency_max_ms": 514.86,
+      "nodes_returned": 298,
+      "edges_returned": 300,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 300
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 500,
+      "max_edges": 300,
+      "latency_avg_ms": 441.13,
+      "latency_min_ms": 360.64,
+      "latency_max_ms": 482.98,
+      "nodes_returned": 298,
+      "edges_returned": 300,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 300
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 300,
+      "latency_avg_ms": 483.87,
+      "latency_min_ms": 429.8,
+      "latency_max_ms": 509.81,
+      "nodes_returned": 301,
+      "edges_returned": 300,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 300
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 500,
+      "max_edges": 300,
+      "latency_avg_ms": 971.59,
+      "latency_min_ms": 926.69,
+      "latency_max_ms": 1017.27,
+      "nodes_returned": 325,
+      "edges_returned": 300,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 300,
+        "both_hit_edges": 0,
+        "returned_edges": 300
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 300,
+      "latency_avg_ms": 17.16,
+      "latency_min_ms": 11.26,
+      "latency_max_ms": 19.72,
+      "nodes_returned": 326,
+      "edges_returned": 300,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 300
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 300,
+      "latency_avg_ms": 465.29,
+      "latency_min_ms": 384.83,
+      "latency_max_ms": 513.43,
+      "nodes_returned": 298,
+      "edges_returned": 300,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 300
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 1000,
+      "max_edges": 300,
+      "latency_avg_ms": 449.65,
+      "latency_min_ms": 417.27,
+      "latency_max_ms": 498.98,
+      "nodes_returned": 298,
+      "edges_returned": 300,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 300
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 300,
+      "latency_avg_ms": 482.11,
+      "latency_min_ms": 448.34,
+      "latency_max_ms": 513.5,
+      "nodes_returned": 301,
+      "edges_returned": 300,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 300
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 1000,
+      "max_edges": 300,
+      "latency_avg_ms": 991.19,
+      "latency_min_ms": 949.76,
+      "latency_max_ms": 1018.98,
+      "nodes_returned": 325,
+      "edges_returned": 300,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 300,
+        "both_hit_edges": 0,
+        "returned_edges": 300
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 300,
+      "latency_avg_ms": 15.87,
+      "latency_min_ms": 11.08,
+      "latency_max_ms": 22.23,
+      "nodes_returned": 326,
+      "edges_returned": 300,
+      "match_stats": {
+        "node_hit_edges": 300,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 300
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 500,
+      "latency_avg_ms": 489.44,
+      "latency_min_ms": 406.07,
+      "latency_max_ms": 576.26,
+      "nodes_returned": 50,
+      "edges_returned": 67,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 67
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 50,
+      "max_edges": 500,
+      "latency_avg_ms": 489.14,
+      "latency_min_ms": 450.25,
+      "latency_max_ms": 515.14,
+      "nodes_returned": 50,
+      "edges_returned": 67,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 67
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 500,
+      "latency_avg_ms": 488.24,
+      "latency_min_ms": 456.08,
+      "latency_max_ms": 505.91,
+      "nodes_returned": 50,
+      "edges_returned": 57,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 57
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 50,
+      "max_edges": 500,
+      "latency_avg_ms": 1099.36,
+      "latency_min_ms": 1033.11,
+      "latency_max_ms": 1158.66,
+      "nodes_returned": 50,
+      "edges_returned": 34,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 500,
+        "both_hit_edges": 0,
+        "returned_edges": 34
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 500,
+      "latency_avg_ms": 22.84,
+      "latency_min_ms": 17.32,
+      "latency_max_ms": 32.02,
+      "nodes_returned": 50,
+      "edges_returned": 45,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 45
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 500,
+      "latency_avg_ms": 499.05,
+      "latency_min_ms": 482.09,
+      "latency_max_ms": 528.39,
+      "nodes_returned": 100,
+      "edges_returned": 117,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 117
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 100,
+      "max_edges": 500,
+      "latency_avg_ms": 467.46,
+      "latency_min_ms": 443.15,
+      "latency_max_ms": 498.68,
+      "nodes_returned": 100,
+      "edges_returned": 117,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 117
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 500,
+      "latency_avg_ms": 491.21,
+      "latency_min_ms": 432.52,
+      "latency_max_ms": 524.21,
+      "nodes_returned": 100,
+      "edges_returned": 120,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 120
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 100,
+      "max_edges": 500,
+      "latency_avg_ms": 1110.17,
+      "latency_min_ms": 1060.29,
+      "latency_max_ms": 1142.54,
+      "nodes_returned": 100,
+      "edges_returned": 74,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 500,
+        "both_hit_edges": 0,
+        "returned_edges": 74
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 500,
+      "latency_avg_ms": 27.5,
+      "latency_min_ms": 25.47,
+      "latency_max_ms": 31.51,
+      "nodes_returned": 100,
+      "edges_returned": 91,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 91
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 500,
+      "latency_avg_ms": 520.69,
+      "latency_min_ms": 511.74,
+      "latency_max_ms": 524.58,
+      "nodes_returned": 200,
+      "edges_returned": 217,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 217
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 200,
+      "max_edges": 500,
+      "latency_avg_ms": 507.11,
+      "latency_min_ms": 503.83,
+      "latency_max_ms": 510.8,
+      "nodes_returned": 200,
+      "edges_returned": 217,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 217
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 500,
+      "latency_avg_ms": 507.71,
+      "latency_min_ms": 496.0,
+      "latency_max_ms": 520.93,
+      "nodes_returned": 200,
+      "edges_returned": 226,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 226
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 200,
+      "max_edges": 500,
+      "latency_avg_ms": 1121.45,
+      "latency_min_ms": 1093.54,
+      "latency_max_ms": 1139.56,
+      "nodes_returned": 200,
+      "edges_returned": 179,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 500,
+        "both_hit_edges": 0,
+        "returned_edges": 179
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 500,
+      "latency_avg_ms": 26.28,
+      "latency_min_ms": 17.2,
+      "latency_max_ms": 32.5,
+      "nodes_returned": 200,
+      "edges_returned": 186,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 186
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 500,
+      "latency_avg_ms": 495.71,
+      "latency_min_ms": 462.27,
+      "latency_max_ms": 508.16,
+      "nodes_returned": 483,
+      "edges_returned": 500,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 500
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 500,
+      "max_edges": 500,
+      "latency_avg_ms": 496.57,
+      "latency_min_ms": 475.95,
+      "latency_max_ms": 507.58,
+      "nodes_returned": 483,
+      "edges_returned": 500,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 500
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 500,
+      "latency_avg_ms": 504.56,
+      "latency_min_ms": 458.91,
+      "latency_max_ms": 525.12,
+      "nodes_returned": 474,
+      "edges_returned": 500,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 500
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 500,
+      "max_edges": 500,
+      "latency_avg_ms": 1115.19,
+      "latency_min_ms": 1097.38,
+      "latency_max_ms": 1131.2,
+      "nodes_returned": 500,
+      "edges_returned": 474,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 500,
+        "both_hit_edges": 0,
+        "returned_edges": 474
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 500,
+      "latency_avg_ms": 28.63,
+      "latency_min_ms": 20.26,
+      "latency_max_ms": 33.58,
+      "nodes_returned": 500,
+      "edges_returned": 487,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 487
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 500,
+      "latency_avg_ms": 501.65,
+      "latency_min_ms": 457.06,
+      "latency_max_ms": 526.02,
+      "nodes_returned": 483,
+      "edges_returned": 500,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 500
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 1000,
+      "max_edges": 500,
+      "latency_avg_ms": 469.98,
+      "latency_min_ms": 450.36,
+      "latency_max_ms": 480.02,
+      "nodes_returned": 483,
+      "edges_returned": 500,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 500
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 500,
+      "latency_avg_ms": 499.99,
+      "latency_min_ms": 483.41,
+      "latency_max_ms": 526.89,
+      "nodes_returned": 474,
+      "edges_returned": 500,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 500
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 1000,
+      "max_edges": 500,
+      "latency_avg_ms": 1118.21,
+      "latency_min_ms": 1084.74,
+      "latency_max_ms": 1145.09,
+      "nodes_returned": 527,
+      "edges_returned": 500,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 500,
+        "both_hit_edges": 0,
+        "returned_edges": 500
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 500,
+      "latency_avg_ms": 25.8,
+      "latency_min_ms": 21.66,
+      "latency_max_ms": 29.68,
+      "nodes_returned": 512,
+      "edges_returned": 500,
+      "match_stats": {
+        "node_hit_edges": 500,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 500
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 1000,
+      "latency_avg_ms": 4482.54,
+      "latency_min_ms": 4369.3,
+      "latency_max_ms": 4588.63,
+      "nodes_returned": 50,
+      "edges_returned": 69,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 69
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 50,
+      "max_edges": 1000,
+      "latency_avg_ms": 1190.63,
+      "latency_min_ms": 1161.04,
+      "latency_max_ms": 1214.25,
+      "nodes_returned": 50,
+      "edges_returned": 69,
+      "match_stats": {
+        "node_hit_edges": 626,
+        "relation_hit_edges": 374,
+        "both_hit_edges": 0,
+        "returned_edges": 69
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 1000,
+      "latency_avg_ms": 728.81,
+      "latency_min_ms": 686.97,
+      "latency_max_ms": 777.15,
+      "nodes_returned": 50,
+      "edges_returned": 71,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 71
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 50,
+      "max_edges": 1000,
+      "latency_avg_ms": 3097.71,
+      "latency_min_ms": 3037.74,
+      "latency_max_ms": 3143.29,
+      "nodes_returned": 50,
+      "edges_returned": 34,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 1000,
+        "both_hit_edges": 0,
+        "returned_edges": 34
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 1000,
+      "latency_avg_ms": 56.42,
+      "latency_min_ms": 53.43,
+      "latency_max_ms": 58.96,
+      "nodes_returned": 50,
+      "edges_returned": 45,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 45
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 1000,
+      "latency_avg_ms": 4456.93,
+      "latency_min_ms": 4400.56,
+      "latency_max_ms": 4505.82,
+      "nodes_returned": 100,
+      "edges_returned": 120,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 120
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 100,
+      "max_edges": 1000,
+      "latency_avg_ms": 1172.04,
+      "latency_min_ms": 1126.01,
+      "latency_max_ms": 1221.49,
+      "nodes_returned": 100,
+      "edges_returned": 120,
+      "match_stats": {
+        "node_hit_edges": 626,
+        "relation_hit_edges": 374,
+        "both_hit_edges": 0,
+        "returned_edges": 120
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 1000,
+      "latency_avg_ms": 768.51,
+      "latency_min_ms": 752.85,
+      "latency_max_ms": 786.28,
+      "nodes_returned": 100,
+      "edges_returned": 149,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 149
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 100,
+      "max_edges": 1000,
+      "latency_avg_ms": 3047.59,
+      "latency_min_ms": 2850.32,
+      "latency_max_ms": 3111.27,
+      "nodes_returned": 100,
+      "edges_returned": 74,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 1000,
+        "both_hit_edges": 0,
+        "returned_edges": 74
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 1000,
+      "latency_avg_ms": 50.99,
+      "latency_min_ms": 33.32,
+      "latency_max_ms": 56.52,
+      "nodes_returned": 100,
+      "edges_returned": 91,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 91
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 1000,
+      "latency_avg_ms": 4445.59,
+      "latency_min_ms": 4405.67,
+      "latency_max_ms": 4482.5,
+      "nodes_returned": 200,
+      "edges_returned": 221,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 221
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 200,
+      "max_edges": 1000,
+      "latency_avg_ms": 1180.41,
+      "latency_min_ms": 1155.73,
+      "latency_max_ms": 1212.9,
+      "nodes_returned": 200,
+      "edges_returned": 221,
+      "match_stats": {
+        "node_hit_edges": 626,
+        "relation_hit_edges": 374,
+        "both_hit_edges": 0,
+        "returned_edges": 221
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 1000,
+      "latency_avg_ms": 713.18,
+      "latency_min_ms": 689.05,
+      "latency_max_ms": 739.72,
+      "nodes_returned": 200,
+      "edges_returned": 260,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 260
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 200,
+      "max_edges": 1000,
+      "latency_avg_ms": 3096.55,
+      "latency_min_ms": 3068.97,
+      "latency_max_ms": 3136.1,
+      "nodes_returned": 200,
+      "edges_returned": 179,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 1000,
+        "both_hit_edges": 0,
+        "returned_edges": 179
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 1000,
+      "latency_avg_ms": 50.36,
+      "latency_min_ms": 43.75,
+      "latency_max_ms": 56.8,
+      "nodes_returned": 200,
+      "edges_returned": 186,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 186
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 1000,
+      "latency_avg_ms": 4339.61,
+      "latency_min_ms": 4254.08,
+      "latency_max_ms": 4422.15,
+      "nodes_returned": 500,
+      "edges_returned": 569,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 569
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 500,
+      "max_edges": 1000,
+      "latency_avg_ms": 1104.33,
+      "latency_min_ms": 1059.7,
+      "latency_max_ms": 1191.29,
+      "nodes_returned": 500,
+      "edges_returned": 566,
+      "match_stats": {
+        "node_hit_edges": 626,
+        "relation_hit_edges": 374,
+        "both_hit_edges": 0,
+        "returned_edges": 566
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 1000,
+      "latency_avg_ms": 772.25,
+      "latency_min_ms": 757.6,
+      "latency_max_ms": 781.23,
+      "nodes_returned": 500,
+      "edges_returned": 603,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 603
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 500,
+      "max_edges": 1000,
+      "latency_avg_ms": 3086.57,
+      "latency_min_ms": 2965.97,
+      "latency_max_ms": 3178.68,
+      "nodes_returned": 500,
+      "edges_returned": 474,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 1000,
+        "both_hit_edges": 0,
+        "returned_edges": 474
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 1000,
+      "latency_avg_ms": 51.69,
+      "latency_min_ms": 37.83,
+      "latency_max_ms": 58.09,
+      "nodes_returned": 500,
+      "edges_returned": 489,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 489
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 1000,
+      "latency_avg_ms": 4330.18,
+      "latency_min_ms": 4152.68,
+      "latency_max_ms": 4435.4,
+      "nodes_returned": 770,
+      "edges_returned": 1000,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 1000
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 1000,
+      "max_edges": 1000,
+      "latency_avg_ms": 1149.3,
+      "latency_min_ms": 1089.23,
+      "latency_max_ms": 1200.48,
+      "nodes_returned": 983,
+      "edges_returned": 1000,
+      "match_stats": {
+        "node_hit_edges": 626,
+        "relation_hit_edges": 374,
+        "both_hit_edges": 0,
+        "returned_edges": 1000
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 1000,
+      "latency_avg_ms": 746.78,
+      "latency_min_ms": 701.56,
+      "latency_max_ms": 788.43,
+      "nodes_returned": 842,
+      "edges_returned": 1000,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 1000
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 1000,
+      "max_edges": 1000,
+      "latency_avg_ms": 3097.25,
+      "latency_min_ms": 3019.32,
+      "latency_max_ms": 3128.11,
+      "nodes_returned": 965,
+      "edges_returned": 1000,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 1000,
+        "both_hit_edges": 0,
+        "returned_edges": 1000
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 1000,
+      "latency_avg_ms": 54.87,
+      "latency_min_ms": 51.0,
+      "latency_max_ms": 58.35,
+      "nodes_returned": 1000,
+      "edges_returned": 985,
+      "match_stats": {
+        "node_hit_edges": 1000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 985
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 2000,
+      "latency_avg_ms": 21492.58,
+      "latency_min_ms": 21379.49,
+      "latency_max_ms": 21721.61,
+      "nodes_returned": 50,
+      "edges_returned": 69,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 69
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 50,
+      "max_edges": 2000,
+      "latency_avg_ms": 3479.08,
+      "latency_min_ms": 3346.9,
+      "latency_max_ms": 3556.51,
+      "nodes_returned": 50,
+      "edges_returned": 69,
+      "match_stats": {
+        "node_hit_edges": 633,
+        "relation_hit_edges": 1367,
+        "both_hit_edges": 0,
+        "returned_edges": 69
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 2000,
+      "latency_avg_ms": 5113.92,
+      "latency_min_ms": 5042.27,
+      "latency_max_ms": 5199.33,
+      "nodes_returned": 50,
+      "edges_returned": 78,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 78
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 50,
+      "max_edges": 2000,
+      "latency_avg_ms": 3124.42,
+      "latency_min_ms": 3063.31,
+      "latency_max_ms": 3213.59,
+      "nodes_returned": 50,
+      "edges_returned": 34,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 2000,
+        "both_hit_edges": 0,
+        "returned_edges": 34
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 50,
+      "max_edges": 2000,
+      "latency_avg_ms": 110.58,
+      "latency_min_ms": 104.21,
+      "latency_max_ms": 113.43,
+      "nodes_returned": 50,
+      "edges_returned": 45,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 45
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 2000,
+      "latency_avg_ms": 21497.99,
+      "latency_min_ms": 21374.64,
+      "latency_max_ms": 21660.59,
+      "nodes_returned": 100,
+      "edges_returned": 120,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 120
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 100,
+      "max_edges": 2000,
+      "latency_avg_ms": 3499.99,
+      "latency_min_ms": 3476.85,
+      "latency_max_ms": 3539.12,
+      "nodes_returned": 100,
+      "edges_returned": 120,
+      "match_stats": {
+        "node_hit_edges": 633,
+        "relation_hit_edges": 1367,
+        "both_hit_edges": 0,
+        "returned_edges": 120
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 2000,
+      "latency_avg_ms": 5130.84,
+      "latency_min_ms": 5030.83,
+      "latency_max_ms": 5202.27,
+      "nodes_returned": 100,
+      "edges_returned": 159,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 159
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 100,
+      "max_edges": 2000,
+      "latency_avg_ms": 3140.65,
+      "latency_min_ms": 3104.95,
+      "latency_max_ms": 3166.69,
+      "nodes_returned": 100,
+      "edges_returned": 74,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 2000,
+        "both_hit_edges": 0,
+        "returned_edges": 74
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 100,
+      "max_edges": 2000,
+      "latency_avg_ms": 106.98,
+      "latency_min_ms": 102.2,
+      "latency_max_ms": 112.6,
+      "nodes_returned": 100,
+      "edges_returned": 91,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 91
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 2000,
+      "latency_avg_ms": 21117.01,
+      "latency_min_ms": 20871.73,
+      "latency_max_ms": 21695.29,
+      "nodes_returned": 200,
+      "edges_returned": 221,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 221
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 200,
+      "max_edges": 2000,
+      "latency_avg_ms": 3459.52,
+      "latency_min_ms": 3427.2,
+      "latency_max_ms": 3497.81,
+      "nodes_returned": 200,
+      "edges_returned": 221,
+      "match_stats": {
+        "node_hit_edges": 633,
+        "relation_hit_edges": 1367,
+        "both_hit_edges": 0,
+        "returned_edges": 221
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 2000,
+      "latency_avg_ms": 5142.98,
+      "latency_min_ms": 5073.52,
+      "latency_max_ms": 5218.34,
+      "nodes_returned": 200,
+      "edges_returned": 278,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 278
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 200,
+      "max_edges": 2000,
+      "latency_avg_ms": 3104.59,
+      "latency_min_ms": 3063.2,
+      "latency_max_ms": 3137.47,
+      "nodes_returned": 200,
+      "edges_returned": 179,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 2000,
+        "both_hit_edges": 0,
+        "returned_edges": 179
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 200,
+      "max_edges": 2000,
+      "latency_avg_ms": 110.6,
+      "latency_min_ms": 108.39,
+      "latency_max_ms": 113.21,
+      "nodes_returned": 200,
+      "edges_returned": 186,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 186
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 2000,
+      "latency_avg_ms": 21014.2,
+      "latency_min_ms": 20924.25,
+      "latency_max_ms": 21082.34,
+      "nodes_returned": 500,
+      "edges_returned": 569,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 569
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 500,
+      "max_edges": 2000,
+      "latency_avg_ms": 3438.45,
+      "latency_min_ms": 3413.62,
+      "latency_max_ms": 3487.38,
+      "nodes_returned": 500,
+      "edges_returned": 569,
+      "match_stats": {
+        "node_hit_edges": 633,
+        "relation_hit_edges": 1367,
+        "both_hit_edges": 0,
+        "returned_edges": 569
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 2000,
+      "latency_avg_ms": 5160.5,
+      "latency_min_ms": 5077.34,
+      "latency_max_ms": 5215.37,
+      "nodes_returned": 500,
+      "edges_returned": 679,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 679
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 500,
+      "max_edges": 2000,
+      "latency_avg_ms": 3156.58,
+      "latency_min_ms": 3063.19,
+      "latency_max_ms": 3205.38,
+      "nodes_returned": 500,
+      "edges_returned": 474,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 2000,
+        "both_hit_edges": 0,
+        "returned_edges": 474
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 500,
+      "max_edges": 2000,
+      "latency_avg_ms": 111.37,
+      "latency_min_ms": 108.98,
+      "latency_max_ms": 113.78,
+      "nodes_returned": 500,
+      "edges_returned": 497,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 497
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 2000,
+      "latency_avg_ms": 20904.13,
+      "latency_min_ms": 20343.77,
+      "latency_max_ms": 21285.28,
+      "nodes_returned": 1000,
+      "edges_returned": 1617,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 1617
+      }
+    },
+    {
+      "node_keyword": "EGFR",
+      "relation_keyword": "activates",
+      "max_nodes": 1000,
+      "max_edges": 2000,
+      "latency_avg_ms": 3408.3,
+      "latency_min_ms": 3324.32,
+      "latency_max_ms": 3491.4,
+      "nodes_returned": 1000,
+      "edges_returned": 1107,
+      "match_stats": {
+        "node_hit_edges": 633,
+        "relation_hit_edges": 1367,
+        "both_hit_edges": 0,
+        "returned_edges": 1107
+      }
+    },
+    {
+      "node_keyword": "TP53",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 2000,
+      "latency_avg_ms": 5125.69,
+      "latency_min_ms": 5057.82,
+      "latency_max_ms": 5192.36,
+      "nodes_returned": 1000,
+      "edges_returned": 1298,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 1298
+      }
+    },
+    {
+      "node_keyword": "",
+      "relation_keyword": "inhibits",
+      "max_nodes": 1000,
+      "max_edges": 2000,
+      "latency_avg_ms": 3171.71,
+      "latency_min_ms": 3117.08,
+      "latency_max_ms": 3215.59,
+      "nodes_returned": 1000,
+      "edges_returned": 1095,
+      "match_stats": {
+        "node_hit_edges": 0,
+        "relation_hit_edges": 2000,
+        "both_hit_edges": 0,
+        "returned_edges": 1095
+      }
+    },
+    {
+      "node_keyword": "pathway::",
+      "relation_keyword": "",
+      "max_nodes": 1000,
+      "max_edges": 2000,
+      "latency_avg_ms": 108.4,
+      "latency_min_ms": 90.55,
+      "latency_max_ms": 118.12,
+      "nodes_returned": 1000,
+      "edges_returned": 999,
+      "match_stats": {
+        "node_hit_edges": 2000,
+        "relation_hit_edges": 0,
+        "both_hit_edges": 0,
+        "returned_edges": 999
+      }
+    }
+  ]
+}

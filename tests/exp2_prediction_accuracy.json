@@ -1,0 +1,391 @@
+{
+  "experiment": "扰动预测准确性评估",
+  "timestamp": "2026-05-12T10:31:52.104561+00:00",
+  "config": {
+    "topk": 100,
+    "essential_threshold": -0.5
+  },
+  "summary": {
+    "kg_mean_chronos": -0.2581,
+    "expr_mean_chronos": -0.0144,
+    "coessentiality_mean_chronos": -0.2521,
+    "random_mean_chronos": -0.1443,
+    "kg_vs_expr_wins": 10,
+    "kg_vs_coess_wins": 5,
+    "mannwhitney_u": 1923331.5,
+    "mannwhitney_p": 0.0,
+    "significant": true
+  },
+  "detail": {
+    "EGFR": {
+      "kg": {
+        "mean_chronos": -0.1716,
+        "spearman_r": -0.0335,
+        "precision": 0.1084,
+        "recall": 0.00522,
+        "n": 83
+      },
+      "expression": {
+        "mean_chronos": -0.0198,
+        "spearman_r": -0.3297,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n": 13
+      },
+      "coessentiality": {
+        "mean_chronos": -0.3225,
+        "spearman_r": -0.0797,
+        "precision": 0.22,
+        "recall": 0.012761,
+        "n": 100
+      },
+      "random": {
+        "mean_chronos": -0.1998,
+        "spearman_r": -0.0215,
+        "precision": 0.13,
+        "recall": 0.007541,
+        "n": 100
+      },
+      "pathway_enrichment": {
+        "seed_pathways": 51,
+        "topk_with_pathways": 7,
+        "shared_pathway_genes": 7,
+        "enrichment_rate": 0.14,
+        "avg_pathways_per_gene": 6.5
+      }
+    },
+    "KRAS": {
+      "kg": {
+        "mean_chronos": -0.2352,
+        "spearman_r": 0.176,
+        "precision": 0.1546,
+        "recall": 0.008701,
+        "n": 97
+      },
+      "expression": {
+        "mean_chronos": 0.0015,
+        "spearman_r": -0.0455,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n": 11
+      },
+      "coessentiality": {
+        "mean_chronos": -0.1234,
+        "spearman_r": 0.0539,
+        "precision": 0.03,
+        "recall": 0.00174,
+        "n": 100
+      },
+      "random": {
+        "mean_chronos": -0.1136,
+        "spearman_r": -0.0627,
+        "precision": 0.04,
+        "recall": 0.00232,
+        "n": 100
+      },
+      "pathway_enrichment": {
+        "seed_pathways": 84,
+        "topk_with_pathways": 5,
+        "shared_pathway_genes": 5,
+        "enrichment_rate": 0.1,
+        "avg_pathways_per_gene": 3.8
+      }
+    },
+    "TP53": {
+      "kg": {
+        "mean_chronos": -0.2979,
+        "spearman_r": 0.2406,
+        "precision": 0.2,
+        "recall": 0.011021,
+        "n": 95
+      },
+      "expression": {
+        "mean_chronos": -0.0568,
+        "spearman_r": -0.4182,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n": 10
+      },
+      "coessentiality": {
+        "mean_chronos": -0.176,
+        "spearman_r": 0.0024,
+        "precision": 0.1,
+        "recall": 0.0058,
+        "n": 100
+      },
+      "random": {
+        "mean_chronos": -0.1591,
+        "spearman_r": -0.1152,
+        "precision": 0.11,
+        "recall": 0.006381,
+        "n": 100
+      },
+      "pathway_enrichment": {
+        "seed_pathways": 51,
+        "topk_with_pathways": 5,
+        "shared_pathway_genes": 5,
+        "enrichment_rate": 0.1,
+        "avg_pathways_per_gene": 6.2
+      }
+    },
+    "PIK3CA": {
+      "kg": {
+        "mean_chronos": -0.2856,
+        "spearman_r": 0.1051,
+        "precision": 0.1959,
+        "recall": 0.011021,
+        "n": 97
+      },
+      "expression": {
+        "mean_chronos": -0.06,
+        "spearman_r": 0.1868,
+        "precision": 0.0714,
+        "recall": 0.00058,
+        "n": 14
+      },
+      "coessentiality": {
+        "mean_chronos": -0.3651,
+        "spearman_r": 0.0769,
+        "precision": 0.23,
+        "recall": 0.013341,
+        "n": 100
+      },
+      "random": {
+        "mean_chronos": -0.1552,
+        "spearman_r": -0.0743,
+        "precision": 0.09,
+        "recall": 0.00522,
+        "n": 100
+      },
+      "pathway_enrichment": {
+        "seed_pathways": 109,
+        "topk_with_pathways": 6,
+        "shared_pathway_genes": 6,
+        "enrichment_rate": 0.12,
+        "avg_pathways_per_gene": 5.6
+      }
+    },
+    "BRAF": {
+      "kg": {
+        "mean_chronos": -0.3018,
+        "spearman_r": 0.1885,
+        "precision": 0.2041,
+        "recall": 0.011601,
+        "n": 98
+      },
+      "expression": {
+        "mean_chronos": 0.0516,
+        "spearman_r": -0.3364,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n": 11
+      },
+      "coessentiality": {
+        "mean_chronos": -0.1842,
+        "spearman_r": -0.1552,
+        "precision": 0.07,
+        "recall": 0.00406,
+        "n": 100
+      },
+      "random": {
+        "mean_chronos": -0.0736,
+        "spearman_r": 0.139,
+        "precision": 0.05,
+        "recall": 0.0029,
+        "n": 100
+      },
+      "pathway_enrichment": {
+        "seed_pathways": 44,
+        "topk_with_pathways": 5,
+        "shared_pathway_genes": 5,
+        "enrichment_rate": 0.1,
+        "avg_pathways_per_gene": 5.5
+      }
+    },
+    "ERBB2": {
+      "kg": {
+        "mean_chronos": -0.2757,
+        "spearman_r": 0.1764,
+        "precision": 0.1684,
+        "recall": 0.009281,
+        "n": 95
+      },
+      "expression": {
+        "mean_chronos": -0.0584,
+        "spearman_r": -0.4451,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n": 13
+      },
+      "coessentiality": {
+        "mean_chronos": -0.2249,
+        "spearman_r": -0.0096,
+        "precision": 0.16,
+        "recall": 0.009281,
+        "n": 100
+      },
+      "random": {
+        "mean_chronos": -0.1878,
+        "spearman_r": -0.029,
+        "precision": 0.15,
+        "recall": 0.008701,
+        "n": 100
+      },
+      "pathway_enrichment": {
+        "seed_pathways": 24,
+        "topk_with_pathways": 5,
+        "shared_pathway_genes": 5,
+        "enrichment_rate": 0.1,
+        "avg_pathways_per_gene": 5.4
+      }
+    },
+    "ALK": {
+      "kg": {
+        "mean_chronos": -0.2887,
+        "spearman_r": 0.2119,
+        "precision": 0.1667,
+        "recall": 0.009281,
+        "n": 96
+      },
+      "expression": {
+        "mean_chronos": -0.0052,
+        "spearman_r": -0.0279,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n": 18
+      },
+      "coessentiality": {
+        "mean_chronos": -0.4332,
+        "spearman_r": 0.1417,
+        "precision": 0.31,
+        "recall": 0.017981,
+        "n": 100
+      },
+      "random": {
+        "mean_chronos": -0.0984,
+        "spearman_r": 0.0389,
+        "precision": 0.06,
+        "recall": 0.00348,
+        "n": 100
+      },
+      "pathway_enrichment": {
+        "seed_pathways": 3,
+        "topk_with_pathways": 4,
+        "shared_pathway_genes": 4,
+        "enrichment_rate": 0.08,
+        "avg_pathways_per_gene": 3.4
+      }
+    },
+    "MET": {
+      "kg": {
+        "mean_chronos": -0.2726,
+        "spearman_r": 0.0464,
+        "precision": 0.1753,
+        "recall": 0.009861,
+        "n": 97
+      },
+      "expression": {
+        "mean_chronos": -0.0077,
+        "spearman_r": -0.0055,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n": 13
+      },
+      "coessentiality": {
+        "mean_chronos": -0.2944,
+        "spearman_r": -0.0809,
+        "precision": 0.11,
+        "recall": 0.006381,
+        "n": 100
+      },
+      "random": {
+        "mean_chronos": -0.1598,
+        "spearman_r": -0.0133,
+        "precision": 0.11,
+        "recall": 0.006381,
+        "n": 100
+      },
+      "pathway_enrichment": {
+        "seed_pathways": 26,
+        "topk_with_pathways": 2,
+        "shared_pathway_genes": 2,
+        "enrichment_rate": 0.04,
+        "avg_pathways_per_gene": 1.5
+      }
+    },
+    "ROS1": {
+      "kg": {
+        "mean_chronos": -0.2774,
+        "spearman_r": -0.1117,
+        "precision": 0.2021,
+        "recall": 0.011021,
+        "n": 94
+      },
+      "expression": {
+        "mean_chronos": -0.016,
+        "spearman_r": -0.1203,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n": 20
+      },
+      "coessentiality": {
+        "mean_chronos": -0.1024,
+        "spearman_r": -0.0729,
+        "precision": 0.06,
+        "recall": 0.00348,
+        "n": 100
+      },
+      "random": {
+        "mean_chronos": -0.1457,
+        "spearman_r": -0.1739,
+        "precision": 0.12,
+        "recall": 0.006961,
+        "n": 100
+      },
+      "pathway_enrichment": {
+        "seed_pathways": 0,
+        "topk_with_pathways": 3,
+        "shared_pathway_genes": 0,
+        "enrichment_rate": 0.0,
+        "avg_pathways_per_gene": 1.2
+      }
+    },
+    "RET": {
+      "kg": {
+        "mean_chronos": -0.1741,
+        "spearman_r": -0.0608,
+        "precision": 0.1146,
+        "recall": 0.006381,
+        "n": 96
+      },
+      "expression": {
+        "mean_chronos": 0.0272,
+        "spearman_r": 0.4091,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n": 11
+      },
+      "coessentiality": {
+        "mean_chronos": -0.2952,
+        "spearman_r": 0.1838,
+        "precision": 0.26,
+        "recall": 0.015081,
+        "n": 100
+      },
+      "random": {
+        "mean_chronos": -0.15,
+        "spearman_r": 0.0833,
+        "precision": 0.07,
+        "recall": 0.00406,
+        "n": 100
+      },
+      "pathway_enrichment": {
+        "seed_pathways": 7,
+        "topk_with_pathways": 7,
+        "shared_pathway_genes": 7,
+        "enrichment_rate": 0.14,
+        "avg_pathways_per_gene": 5.4
+      }
+    }
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "experiment": "消融 & 模态贡献（多跳版）",
+  "timestamp": "2026-05-12T06:33:17.467523+00:00",
+  "results": {
+    "sample_size": 200,
+    "degree_stats": {
+      "min": 1,
+      "max": 1127,
+      "mean": 94.3,
+      "median": 1
+    },
+    "hop1_source": {
+      "NCBI Gene": {
+        "total": 124,
+        "avg_ratio": 0.92,
+        "ci95": 0.0475,
+        "coverage": 124
+      },
+      "BioGRID": {
+        "total": 1623,
+        "avg_ratio": 0.3044,
+        "ci95": 0.1234,
+        "coverage": 10
+      },
+      "DerivedPerturbation": {
+        "total": 602,
+        "avg_ratio": 0.2618,
+        "ci95": 0.0706,
+        "coverage": 10
+      },
+      "KEGG": {
+        "total": 399,
+        "avg_ratio": 0.1349,
+        "ci95": 0.0659,
+        "coverage": 9
+      },
+      "Ensembl": {
+        "total": 10,
+        "avg_ratio": 0.0085,
+        "ci95": 0.0087,
+        "coverage": 10
+      },
+      "STRING": {
+        "total": 10,
+        "avg_ratio": 0.0085,
+        "ci95": 0.0087,
+        "coverage": 10
+      }
+    },
+    "hop1_relation": {
+      "ASSOCIATED_WITH": {
+        "total": 1767,
+        "avg_ratio": 0.946,
+        "ci95": 0.0335,
+        "coverage": 124
+      },
+      "AFFECTS_SHARED_PATHWAY_2HOP": {
+        "total": 504,
+        "avg_ratio": 0.2163,
+        "ci95": 0.069,
+        "coverage": 9
+      },
+      "PARTICIPATES": {
+        "total": 399,
+        "avg_ratio": 0.1349,
+        "ci95": 0.0659,
+        "coverage": 9
+      },
+      "TARGETS_GENE": {
+        "total": 70,
+        "avg_ratio": 0.0593,
+        "ci95": 0.0606,
+        "coverage": 10
+      },
+      "AFFECTS_ASSOCIATED_WITH": {
+        "total": 28,
+        "avg_ratio": 0.0193,
+        "ci95": 0.0069,
+        "coverage": 4
+      }
+    },
+    "hop2_source": {
+      "DerivedPerturbation": {
+        "total": 9448,
+        "avg_ratio": 3.6269,
+        "ci95": 1.2243,
+        "coverage": 10
+      },
+      "KEGG": {
+        "total": 144,
+        "avg_ratio": 0.0618,
+        "ci95": 0.0197,
+        "coverage": 9
+      }
+    },
+    "hop3_protein_bridge": {
+      "STRING": {
+        "total": 27208,
+        "avg_ratio": 7.4645,
+        "ci95": 2.1904,
+        "coverage": 10
+      }
+    },
+    "omics_coverage": {
+      "EXPRESSES": {
+        "edges": 773930,
+        "genes_covered": 23580
+      },
+      "HAS_CNV": {
+        "edges": 194518,
+        "genes_covered": 21392
+      },
+      "HAS_METHYLATION": {
+        "edges": 209600,
+        "genes_covered": 2742
+      },
+      "REGULATES": {
+        "edges": 6831594,
+        "genes_covered": 147959
+      }
+    },
+    "seed_omics": {
+      "EGFR": {
+        "EXPRESSES": 34,
+        "HAS_CNV": 57
+      },
+      "KRAS": {
+        "EXPRESSES": 43,
+        "HAS_CNV": 43
+      },
+      "TP53": {
+        "EXPRESSES": 9,
+        "HAS_CNV": 1
+      },
+      "PIK3CA": {
+        "EXPRESSES": 40,
+        "HAS_CNV": 140
+      },
+      "BRAF": {
+        "EXPRESSES": 25,
+        "HAS_CNV": 2
+      },
+      "ERBB2": {
+        "EXPRESSES": 17,
+        "HAS_CNV": 16
+      },
+      "ALK": {
+        "EXPRESSES": 50,
+        "HAS_CNV": 3
+      },
+      "MET": {
+        "EXPRESSES": 20,
+        "HAS_CNV": 15
+      },
+      "ROS1": {
+        "EXPRESSES": 3,
+        "HAS_CNV": 2
+      },
+      "RET": {
+        "EXPRESSES": 56,
+        "HAS_CNV": 1
+      }
+    },
+    "knowledge_vs_omics": {
+      "knowledge_gene_ratio": 0.62,
+      "omics_gene_ratio": 0.0327,
+      "omics_genes_covered_global": 32038,
+      "note": "知识源基因比=0.62（抽样200个基因中124个有知识源邻居），组学源基因比=0.03265415117858879（全图981131基因中32038个有组学数据）"
+    },
+    "seed_detail": {
+      "EGFR": {
+        "degree": 792,
+        "hop1_top_sources": {
+          "BioGRID": 507,
+          "DerivedPerturbation": 70,
+          "KEGG": 51,
+          "Ensembl": 1,
+          "NCBI Gene": 1
+        },
+        "hop2_reachable_genes": 1250,
+        "hop3_via_protein": 6018
+      },
+      "KRAS": {
+        "degree": 282,
+        "hop1_top_sources": {
+          "KEGG": 84,
+          "DerivedPerturbation": 70,
+          "BioGRID": 35,
+          "STRING": 1,
+          "NCBI Gene": 1
+        },
+        "hop2_reachable_genes": 1076,
+        "hop3_via_protein": 2975
+      },
+      "TP53": {
+        "degree": 1127,
+        "hop1_top_sources": {
+          "BioGRID": 765,
+          "DerivedPerturbation": 63,
+          "KEGG": 51,
+          "Ensembl": 1,
+          "NCBI Gene": 1
+        },
+        "hop2_reachable_genes": 968,
+        "hop3_via_protein": 9283
+      },
+      "PIK3CA": {
+        "degree": 412,
+        "hop1_top_sources": {
+          "KEGG": 109,
+          "DerivedPerturbation": 70,
+          "BioGRID": 45,
+          "Ensembl": 1,
+          "NCBI Gene": 1
+        },
+        "hop2_reachable_genes": 1074,
+        "hop3_via_protein": 1619
+      },
+      "BRAF": {
+        "degree": 186,
+        "hop1_top_sources": {
+          "DerivedPerturbation": 63,
+          "KEGG": 44,
+          "BioGRID": 38,
+          "NCBI Gene": 1,
+          "Ensembl": 1
+        },
+        "hop2_reachable_genes": 976,
+        "hop3_via_protein": 2477
+      },
+      "ERBB2": {
+        "degree": 264,
+        "hop1_top_sources": {
+          "BioGRID": 113,
+          "DerivedPerturbation": 70,
+          "KEGG": 24,
+          "STRING": 1,
+          "Ensembl": 1
+        },
+        "hop2_reachable_genes": 1258,
+        "hop3_via_protein": 2635
+      },
+      "ALK": {
+        "degree": 188,
+        "hop1_top_sources": {
+          "DerivedPerturbation": 63,
+          "BioGRID": 60,
+          "KEGG": 3,
+          "Ensembl": 1,
+          "NCBI Gene": 1
+        },
+        "hop2_reachable_genes": 990,
+        "hop3_via_protein": 392
+      },
+      "MET": {
+        "degree": 167,
+        "hop1_top_sources": {
+          "DerivedPerturbation": 63,
+          "BioGRID": 31,
+          "KEGG": 26,
+          "STRING": 1,
+          "NCBI Gene": 1
+        },
+        "hop2_reachable_genes": 998,
+        "hop3_via_protein": 1301
+      },
+      "ROS1": {
+        "degree": 20,
+        "hop1_top_sources": {
+          "DerivedPerturbation": 7,
+          "BioGRID": 4,
+          "Ensembl": 1,
+          "NCBI Gene": 1,
+          "STRING": 1
+        },
+        "hop2_reachable_genes": 12,
+        "hop3_via_protein": 183
+      },
+      "RET": {
+        "degree": 162,
+        "hop1_top_sources": {
+          "DerivedPerturbation": 63,
+          "BioGRID": 25,
+          "KEGG": 7,
+          "STRING": 1,
+          "NCBI Gene": 1
+        },
+        "hop2_reachable_genes": 990,
+        "hop3_via_protein": 325
+      }
+    }
+  }
+}
